@@ -1,6 +1,6 @@
 <template>
 <div class="row" id="rw">
-  <stock-panel :key="index" v-for="(x,index) in stocks"></stock-panel>
+  <stock-panel :key="index" v-for="(stock,index) in stocks" :stock="stock"></stock-panel>
 
 
 
@@ -9,16 +9,14 @@
 <script>
 import stockPanel from "./Stock.vue"
 export default {
-  data(){
-    return{
 
-    }
-  },
   components:{
     stockPanel:stockPanel
   },
   computed:{
-
+    stocks(){
+      return this.$store.getters.stocks
+    }
   }
 
 }

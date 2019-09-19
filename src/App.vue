@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div class="container-fluid" style="background-color:#eaeaf4">
   <app-header></app-header>
   <div class="row">
     <div class="col-xl-12">
@@ -17,6 +17,9 @@ import Header from "./components/Header.vue"
 export default {
   components:{
     appHeader:Header
+  },
+  created(){
+    this.$store.dispatch('initStock')
   }
 
 }

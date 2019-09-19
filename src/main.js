@@ -5,10 +5,7 @@ import {
   routes
 } from "./router.js"
 
-import {
-  store
-}
-from "./store/store.js"
+import store from "./store/store.js"
 
 
 

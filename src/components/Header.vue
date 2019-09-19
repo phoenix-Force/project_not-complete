@@ -1,5 +1,5 @@
 <template>
-<nav class="navbar navbar-expand-lg bg-primary">
+<nav class="navbar navbar-expand-lg " style="background-color:#3939ac">
   <router-link to="/" class = "navbar-brand">Stock Trader</router-link>
   <div class="collapse navbar-collapse">
     <ul class="navbar-nav mr-auto">
@@ -15,15 +15,16 @@
       <li class="nav-item">
         <router-link class="nav-link pull-right" to=""><a>End day</a></router-link>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle pull-right" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Save & Load
-        </a>
-        <div class="dropdown-menu" aria-labelledbystocks="navbarDropdown">
-          <a class="dropdown-item" href="">Save</a>
-          <a class="dropdown-item" href="">Load</a>
+
+        <div class="dropdown pull-right">
+           <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">p
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Save</a></li>
+            <li><a href="#">Load</a></li>
+          </ul>
         </div>
-      </li>
+
     </ul>
   </div>
 </nav>
