@@ -1,7 +1,5 @@
 import stocks from "../../data/data.js"
 
-
-
 const state = {
   stocks: []
 }
@@ -30,7 +28,7 @@ const actions = {
     commit('RND_STOCK')
   },
   getters: {
-    stocks: (state) => this.state.stocks
+    stocks: state => state.stocks
 
   }
 

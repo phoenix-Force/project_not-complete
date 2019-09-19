@@ -20,6 +20,7 @@ export default {
   },
   created(){
     this.$store.dispatch('initStock')
+    console.log("hello world")
   }
 
 }
